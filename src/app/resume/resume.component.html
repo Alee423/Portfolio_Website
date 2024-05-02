@@ -1,0 +1,130 @@
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+<div class="pb-2">
+<accordion [isAnimated]="true" class="shadow"> 
+<accordion-group [(isOpen)]="isWorkExperienceOpen" >
+    <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;">></div>
+        <div class="btn-link">Work Experience</div>
+        <div style="width: 10.95px;">
+            <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+            <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+        </div>
+    </button>
+
+    <div style="text-align: left;">
+     <h2 class="mb-0">WEB DEVELOPER</h2>
+     <h3 class="text-primary">Internship at No Name Software Developers (Pvt.) LTD   (January 2023 – March 2023)</h3>
+     <ul>
+         <li>Location: 117-D-II, MAIN BOULEVARD WAPDA TOWN, LAHORE</li>
+         <li>As a frontend developer, responsible for creating the visual and interactive elements of a web-site or application that users see and interact with. Having expertise in HTML, CSS and JavaScript.</li>
+    </ul>
+</div>
+<div style="text-align: left;">
+    <h2 class="mb-0">WEB DEVELOPER</h2>
+    <h3 class="text-primary">Intern - Punjab Information Technology Board (PITB)  (September 2023 – April 2024)</h3>
+    <ul>
+        <li>Location: ARFA TOWER, LAHORE</li>
+        <li>Contributed to the development of web applications, focusing on front-end technologies like
+            HTML, CSS, and Angular.Assisted in back-end development tasks using .NET and gained hands-on experience with database management in PostgreSQL.
+        </li>
+   </ul>
+</div>
+</accordion-group>
+<accordion-group [(isOpen)]="isEducationOpen">
+    <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;">></div>
+        <div class="btn-link">Education</div>
+        <div style="width: 10.95px;">
+            <div *ngIf="!isEducationOpen" style="color: white;">></div>
+            <div *ngIf="isEducationOpen" style="color: white;">v</div>
+        </div>
+    </button>
+    <div style="text-align: left;">
+        <h2 class="mb-0">Bachelor's of Science Information Technology   (2018-2022)</h2>
+        <h3 class="text-primary">University of Education</h3>
+        <ul>
+           <li>Graduated with a 3.13 CGPA</li>
+            
+       </ul>
+       <h2 class="mb-0">F.S.C (Pre- Engineering)    (2016-2018)</h2>
+       <h3 class="text-primary">Board of Intermediate and Secondary Education, Lahore, Pakistan</h3>
+       <ul>
+          <li>Marks obtained 693</li>
+           
+      </ul>
+      <h2 class="mb-0">Matriculation (Science Group)   (2014-2016)</h2>
+      <h3 class="text-primary">Board of Intermediate and Secondary Education, Lahore, Pakistan</h3>
+      <ul>
+         <li>Marks obtained 876</li>
+          
+     </ul>
+   </div>
+    
+</accordion-group>
+<accordion-group [(isOpen)]="isCertificationsOpen">
+    <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;">></div>
+        <div class="btn-link">Certifications</div>
+        <div style="width: 10.95px;">
+            <div *ngIf="!isCertificationsOpen" style="color: white;">></div>
+            <div *ngIf="isCertificationsOpen" style="color: white;">v</div>
+        </div>
+    </button>
+    <div style="text-align: left;">
+        <h3 class="text-primary"> No Name Software Developers (Pvt.) LTD</h3>
+        <button (click)="DownloadFile2()" class="btn btn-primary mb-5 shadow border">Download PDF Certificate</button>
+        <!-- <ul>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+       </ul> -->
+   </div>
+    
+</accordion-group>
+<accordion-group [(isOpen)]="isSkillsOpen">
+    <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;">></div>
+        <div class="btn-link">Skills</div>
+        <div style="width: 10.95px;">
+            <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+            <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+        </div>
+    </button>
+    <div class="row" style="text-align: left;">
+        <div class="col">
+            <h3>Programming Languages:</h3>
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+                <li>C#</li>
+                <li>TypeScript</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Frameworks:</h3>
+            <ul>
+           <li>Angular</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Database:</h3>
+            <ul>
+           <li>PostgreSQL</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Developer Tools:</h3>
+            <ul>
+           <li>Visual Studio Code</li>
+           <li>Postman</li>
+            </ul>
+        </div>
+    </div>
+  
+</accordion-group>
+</accordion>
+</div>
+</div>
+
+
